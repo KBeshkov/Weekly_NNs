@@ -51,20 +51,17 @@ plt.imshow(x[1])
 plt.title('Activity plot')
 plt.xlabel('Time (t)')
 plt.yticks([])
-plt.savefig('C:\Kosio\Articles\Blog\Weekly_NNs\Intro\\activity.png')
 
 #dimensionality reduced activity
 plt.figure(dpi=120)
 plt.plot(x_reduced[:,0],x_reduced[:,1],'.')
 plt.title('Low dimensional embedding of activity')
-plt.savefig('C:\Kosio\Articles\Blog\Weekly_NNs\Intro\pca_act.png')
 
 #Weight matrix plot
 plt.figure(dpi=120)
 plt.imshow(Weights)
 plt.colorbar()
 plt.title('The weight matrix')
-plt.savefig('C:\Kosio\Articles\Blog\Weekly_NNs\Intro\weights.png')
 
 #Distributions plot
 plt.figure(dpi=120)
@@ -76,4 +73,3 @@ plt.subplot(1,2,2)
 plt.hist(x[1][x[1]!=-70].flatten(),20,density=True)
 plt.title('Distribution of voltage values')
 plt.tight_layout()
-plt.savefig('C:\Kosio\Articles\Blog\Weekly_NNs\Intro\statistics.png')
